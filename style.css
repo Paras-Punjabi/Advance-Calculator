@@ -1,0 +1,150 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body::after {
+  content: "";
+  background: url("https://images.unsplash.com/photo-1585119192382-71236d43b689?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#icon{
+  position: relative;
+  bottom: 2px;
+}
+
+#head {
+  margin-left: -8px;
+  font-size: 50px;
+  color: seashell;
+  margin-bottom: -32px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.line {
+  width: 307px;
+  height: 3px;
+  background-color: #ff6a00;
+  margin: 34px auto -30px auto;
+}
+
+i {
+  font-size: 30px;
+}
+
+.calcy {
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+  border: 3px solid black;
+  border-radius: 40px;
+  display: inline-block;
+  height: 600px;
+  width: 400px;
+  background-color: black;
+  box-shadow: 19px 21px 33px black;
+ margin: auto;
+}
+
+#result {
+  margin-top: 53px;
+  margin-bottom: 16px;
+  background-color: whitesmoke;
+  width: 87.5%;
+  height: 45px;
+  border-radius: 4px;
+  font-size: 30px;
+  outline: none;
+  overflow-x: auto;
+}
+
+.operator {
+  height: 60px;
+  font-size: 25px;
+  font-weight: bolder;
+  filter: drop-shadow(2px 2px 2px #ff6a00);
+  width: 60px;
+  background-color: #ff6a00;
+  margin: 10px;
+  border: 4px solid #ff6a00;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: black;
+}
+
+.operator:hover {
+  background-color: red;
+  border: 4px solid red;
+  filter: drop-shadow(2px 2px 2px red);
+}
+
+.k-adv .operator {
+  font-size: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.operator:first-child {
+  font-size: 25px;
+}
+
+.toggle i {
+  color: whitesmoke;
+  position: absolute;
+  left: 1rem;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+i:hover:not(#icon:hover),
+i:active:not(#icon:active) {
+  color: red;
+}
+
+/*Media Queries for phones*/
+@media screen and (max-width: 470px) {
+  .calcy {
+    height: 600px;
+    width: 350px;
+  }
+  .operator {
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+  }
+  .keyboard {
+    position: relative;
+    top: 20px;
+  }
+  .k-adv .operator {
+    font-size: 17px;
+  }
+  .k-adv{
+    position: relative;
+    top: 20px;
+  }
+}
+
