@@ -50,6 +50,7 @@ body::after {
 
 i {
   font-size: 30px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .calcy {
@@ -91,6 +92,7 @@ i {
   border-radius: 50%;
   cursor: pointer;
   color: black;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .operator:hover {
